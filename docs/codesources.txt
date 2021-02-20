@@ -1,3 +1,6 @@
+Many online resources have been used in the creation of this project, and I would like to acknowledge them below. 
+The creators of these resources have made them freely accessible, and without their help, this project could not be a success. 
+
 https://blog.mounirmesselmeni.de/2012/11/20/reading-csv-file-with-javascript-and-html5-file-api/
 https://www.youtube.com/watch?v=ZZncFax8yNY&ab_channel=KristinGoodman
 https://www.youtube.com/watch?v=xEXNvRxJYt8&ab_channel=Reecry
