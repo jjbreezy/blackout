@@ -60,8 +60,6 @@
                 <div id="card_display">
                     <p class="font-effect-anaglyph">Card Display: No Cards Yet Drawn</p>
                     <!--needs animation in,
-                    needs to source to a csv (or maybe just a big array in javascript that I could possibly make in a separate js file,
-                    or a JSON file if I figure out how to do that easily),
                     needs to have randomness and
                     a large enough database.
                     also, coloring cards by class like dares, games, questions, etc would be good-->
@@ -70,7 +68,7 @@
                 <div id="card_button">
                     <p>Card Button</p>
                     <button id="newCardButton">Get a card</button>
-                    <!-- submit input button to get card content from csv 
+                    <!-- 
                     some cards are timed-->
                     <div id="counter_holder">
                         <p id="drawn_counter">0 drawn</p>
@@ -81,7 +79,7 @@
                 <!-- <p>Dice Container</p> -->
                 <div id="dice_display">
                     <p class="font-effect-anaglyph"></p>
-                    <!--need to figure out how to do random dice, and maybe animate them in light 3d JS...-->
+                    <!--animate dice-->
                     <!--store previous dice roll in local storage and display-->
                 </div>
                 <div id="roll_dice_button">
@@ -92,12 +90,15 @@
                     </div>
                 </div>
             </div>
-            <div id="rules"> <!-- honestly the size of the rules makes me think this should be a separate page.-->
+            <div id="rules"> <!-- honestly the size of the rules makes me think this should be a separate page, or an abridged version in the modal and
+            then more in the separate page. The issue is that opening a new page breaks the single page app illusion of the webpage, although
+        not as many users are prob even gonna use it like that.-->
                 <p>Rules</p> 
                 <div class="modal" id="rulesmodal">
                     <h1>Blackout!: The Card Game</h1>
                     <h2>RULES</h2>
-                    <p>2+ players</p>
+                    <p>2+ players</p> <!-- make a rules section for how to distribute an odd number of players... team with more players
+                    goes first?-->
                     <p>Age 21 and Up</p>
                     <p>Blackout is, at its core, a simple game. 
                     The turn order is clockwise starting with the oldest player. Age before beauty.   
