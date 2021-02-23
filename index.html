@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174469449-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-174469449-1');
@@ -15,12 +16,12 @@
     <meta name="googlebot" content="noindex" />
     <meta name="googlebot" content="nofollow" />
     <meta name="googlebot" content="noarchive" />
-    
+
     <!-- allegedly makes the bookmarked page version fullscreen capable and non-zoomable-->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no"/>
-    
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
     <!-- favicon.io favicons for web and also apple touch icons for bookmark-->
     <link rel="apple-touch-startup-image" href="icons/android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
@@ -28,16 +29,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="manifest" href="icons/site.webmanifest">
-    
+
     <!-- google adsense -->
-    <script data-ad-client="ca-pub-6238449652173707" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-6238449652173707" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- functionality javascript and JSON files-->
-    <script type = "text/javascript" src="/js/cardgamejs.js"></script>
+    <script type="text/javascript" src="/js/cardgamejs.js"></script>
     <script src="/decks/test_cards.json"></script>
-    
+
     <link rel="stylesheet" href="/css/cardgamecss.css">
-    
+
     <!--site info and basic housekeeping-->
     <title>Blackout!: The Game</title>
     <meta name="apple-mobile-web-app-title" content="Blackout!">
@@ -45,127 +47,167 @@
     <meta name="author" content="Blackout Dev Team">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    
+
     <!-- google font link-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    </head>
-    <body>
-        <div id="container">
-            <!-- <p>Container</p> -->
-            <div id="card_container">
-                <!-- <p>Card Container</p> -->
-                <img id ="logo" src="/img/blackout_logo_png3.png">
-                <div id="card_display">
-                    <p class="font-effect-anaglyph">Card Display: No Cards Yet Drawn</p>
-                    <!--needs animation in,
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- <p>Container</p> -->
+        <div id="card_container">
+            <!-- <p>Card Container</p> -->
+            <img id="logo" src="/img/blackout_logo_png3.png">
+            <div id="card_display">
+                <p class="font-effect-anaglyph">Card Display: No Cards Yet Drawn</p>
+                <!--needs animation in,
                     needs to have randomness and
                     a large enough database.
                     also, coloring cards by class like dares, games, questions, etc would be good-->
-                    
-                </div>
-                <div id="card_button">
-                    <p>Card Button</p>
-                    <button id="newCardButton">Get a card</button>
-                    <!-- 
+
+            </div>
+            <div id="card_button">
+                <p>Card Button</p>
+                <button id="newCardButton">Get a card</button>
+                <!-- 
                     some cards are timed-->
-                    <div id="counter_holder">
-                        <p id="drawn_counter">0 drawn</p>
-                    </div>
+                <div id="counter_holder">
+                    <p id="drawn_counter">0 drawn</p>
                 </div>
             </div>
-            <div id="dice_container">
-                <!-- <p>Dice Container</p> -->
-                <div id="dice_display">
-                    <p class="font-effect-anaglyph"></p>
-                    <!--animate dice-->
-                    <!--store previous dice roll in local storage and display-->
-                </div>
-                <div id="roll_dice_button">
-                    <p>Roll Dice Button</p>
-                    <button id="rollDiceButton">Roll the dice</button>
-                    <div id="counter_holder">
-                        <p id="rolled_counter">0 rolled</p>
-                    </div>
+        </div>
+        <div id="dice_container">
+            <!-- <p>Dice Container</p> -->
+            <div id="dice_display">
+                <p class="font-effect-anaglyph"></p>
+                <!--animate dice-->
+                <!--store previous dice roll in local storage and display-->
+            </div>
+            <div id="roll_dice_button">
+                <p>Roll Dice Button</p>
+                <button id="rollDiceButton">Roll the dice</button>
+                <div id="counter_holder">
+                    <p id="rolled_counter">0 rolled</p>
                 </div>
             </div>
-            <div id="rules"> <!-- honestly the size of the rules makes me think this should be a separate page, or an abridged version in the modal and
+        </div>
+        <div id="rules">
+            <!-- honestly the size of the rules makes me think this should be a separate page, or an abridged version in the modal and
             then more in the separate page. The issue is that opening a new page breaks the single page app illusion of the webpage, although
         not as many users are prob even gonna use it like that.-->
-                <p>Rules</p> 
-                <div class="modal" id="rulesmodal">
-                    <h1>Blackout!: The Card Game</h1>
-                    <h2>RULES</h2>
-                    <p>2+ players</p> <!-- make a rules section for how to distribute an odd number of players... team with more players
-                    goes first?-->
-                    <p>Age 21 and Up</p>
-                    <p>Blackout is, at its core, a simple game. 
-                    The turn order is clockwise starting with the oldest player. Age before beauty.   
-                    Your team's objective is to get all of your crewmates across the board to the opposing planet as quickly as possible.
-                    All crewmates must land on the opposite planet in order to secure a win. No crewmate left behind.  
-                    To do this, you roll a dice and proceed the number of spaces that the dice indicates. 
-                    You then draw a card, and if you dare, respond to what is written on it. 
-                    Every turn, a player will pour some of their drink into the black hole cup in the center of the board.
-                    If your pour is the one that causes the drink to spill, then you must sacrifice yourself for your crew and finish the black hole cup. 
-                    If you land on one of these spaces (image insert here) then you have gotten sucked into the black hole and must finish the drink. 
-                    However, your voyage down the rabbit hole is not completely fruitless. 
-                    Upon completion of the black hole cup, you may travel to the next closest wormhole to your goal planet. <!--this should have an image-->
-                    This is a game meant to be played with friends, old and new alike. 
-                    As such, any player may skip a card they are not comfortable with if they wish by skipping their turn, leaving their piece unmoved. 
-                    (with the exception of movement cards, which are not skippable)
-                    There is no limit to the number of skips a player may use, but one should keep in mind that skipping your turn puts your crew at a disadvantage.  
-                    If any player vomits, the game is over immediately.
-                    Have fun, and may the best crew win.  
+            <p>Rules</p>
+            <div class="modal" id="rulesmodal">
+                <h1>Blackout!: The Card Game</h1>
+                <h2>RULES</h2> <!-- short version -->
+                <p>2+ Players</p>
+                <p>Ages 21 and up.</p>
+                <p>Contains explicit content</p>
+                <div>
+                    <h3>Gameplay Rules</h3>
+                    <p></p>
+                    <p>Every player must finish a full glass of water over the course of a single game. Any team who has
+                        water remaining in any of their players' glasses will forefit.
                     </p>
-                    <p>PLEASE DRINK RESPONSIBLY</p>
-                    <h3>CARDS</h3>
-                    <p>
-                        CARD TYPES: <!-- would be good to have card images here and examples as well
-                        honestly the more and more i look at it the more it seems like this would be best as a separate page...-->
-                        <ul>
-                            <li>Spill: a confession of fact.</li>
-                            <li>Dare: a dare to do an action.</li> <!-- alternative name: venture-->
-                            <li>Group: a question to the whole group.</li> <!-- alternative name: beacon-->
-                            <li>Movement: how a player's piece will move. These cards are not skippable</li> <!-- maybe change name to spaceflight or something-->
-                            <li>Game: a game to be played with other players.</li> <!-- alternative name: challenge-->
-                            <li>Rule: a new game rule, to take place on a given action. It helps to write these down</li>
-                            <li>Blackout: A blind vote where those in the minority will drink</li> <!-- unsure about this category, or rather it being a separate category-->
-                        </ul>
-                        TIMED CARDS: some cards have a time limit associated with them. This limit will be clearly displayed and count down on the dealer's phone. 
-                        Failure to complete the card in the allotted time will result in the player finishing their drink. 
+                    <p>A player may choose to skip their turn if they draw a card they are not comfortable with for any reason.
+                        A player who skips their turn will leave their piece unmoved. 
                     </p>
-                    <h2>DISCLAIMER</h2>
-                    <p>
-                        BLACKOUT IS NOT A FAMILY GAME AND CONTAINS EXPLICIT ADULT CONTENT INAPPROPRIATE FOR PERSONS UNDER 18.<br>
-                        PLEASE DRINK RESPONSIBLY <br>
-                        IN THE UNITED STATES OF AMERICA, THE LEGAL DRINKING AGE IS 21 YEARS OLD.<br>
-                        THE CREATOR OF THE GAME IS NOT RESPONSIBLE FOR ANY DAMAGES, INJURY, OR OTHER ISSUES INCURRED AS A RESULT OF THE USE OF THIS GAME, WEBSITE, 
-                        OR ANY OTHER ASSOCIATED MATERIALS.<br>
-                        THE OPINIONS EXPRESSED WITHIN ARE NOT THE OPINIONS OF THE CREATOR OF THIS GAME <br>
-                        IT IS RECOMMENDED THAT THIS GAME BE PLAYED FOR MULTIPLE ROUNDS ONLY WITH A BEVERAGE OF LESS THAN 5% ABV. <br>
-                        IT IS RECOMMENDED THAT EACH PLAYER DRINK A FULL GLASS OF WATER OVER THE COURSE OF A SINGLE GAME. <br>
-                        PLEASE DRINK RESPONSIBLY
+                    <p>There is no limit to the number of skips a player may use, but one should keep in mind that skipping your turn
+                        puts your crew at a significant disadvantage.</p>
+                    <p>If any player vomits, the game is over immediately. The vomiting player's team forefits the game for 
+                        allowing their teammate to exceed their limits.</p>
+                    <p>Every turn, the player will pour an amount of their drink into the Black Hole Cup.</p>
+                    <p>The player whose pour causes the glass to spill will finish the Black Hole Cup. That player does not move to the next wormhole.</p>
+                </div>
+                <div>
+                    <h3>Your Turn</h3>
+                    <p>Player will roll the dice once at the start of their turn (unless otherwise instructed by a card).</p>
+                    <p>Player will move their piece the number of spaces displayed on the dice</p>
+                    <p>Once their piece is finished moving, Player will draw a card from the deck unless they have landed on a special space</p>
+                    <p>Player will choose to either act on the card they have drawn or to pass and forefit their turn.</p>
+                    <p>If Player wishes to pass on a special space, player will return their piece to the space it was in before they moved.</p>
+                    <p>Player may choose to go left or right towards their goal when they are faced with a crossroads.</p>
+                </div>
+                <div>
+                    <h3>Cards</h3>
+                    <p>There are many different kinds of cards in Blackout.</p>
+                    <ul>
+                        <li>Spill: a confession of fact.</li>
+                        <li>Dare: a dare to do an action.</li> 
+                        <li>Group: a question to the whole group.</li> 
+                        <li>Movement: how a player's piece will move.</li>
+                        <li>Game: a game to be played with other players.</li> 
+                        <li>Rule: a new game rule, triggered by the action specified on the card. It helps to write these down.</li>
+                        <li>Blackout: An eyes-closed blind vote where players in the minority will drink</li>
+                        <!--time bomb, a card that begins a countdown when flipped over-->
+                    </ul>
+                </div>
+                <div>
+                    <h3>Special Spaces</h3>
+                    <p>There are special spaces that trigger certain actions when they are landed on by a player</p>
+                    
+                    <h4>Wormhole</h4>
+                    <p>A player who lands in a wormhole will drink the entirety of the black hole cup in the center of the board.</p>
+                    <p>That player will then move one wormhole closer to their goal side.</p>
+                    <p>If no wormholes remain between the player and their goal landing point (side), that player moves directly to their landing point.</p>
+                    
+                    <h4>Moonshot</h4>
+                    <p></p>
+                </div>
+                <div>
+                    <h3>Starting the Game</h3>
+                    <p>The players will divide into two teams before the game begins, and sit alternating teams around the board.</p>
+                    <p>The oldest player will play first, the turn order proceeds clockwise from them around the circle of players.
+                        players.
                     </p>
                 </div>
-            </div>
-            <div id="settings">
-                <p>Settings</p>
-                <div class="modal" id="settingsmodal">
-                    <div><p>Explicit Content Filter</p></div> <!-- needs also an explanation of what the explict content is-->
-                    <div><p>Include original cards</p></div>
-                    <div><p>Include Expansion 1 Cards</p></div>
-                    <div><p>Include Expansion 2 Cards</p></div>
-                    <div><p>Include Expansion 3 Cards</p></div>
-                    <div><p>Include Timed Cards</p></div>
-                    <div><p>Include Custom Cards</p></div> <!-- custom csv upload support needed, more advanced version that would probably require a server is accounts with
-                    custom cards tied to a user account, maybe even card sharing. Could also do card creation in localstorage, but it wouldn't be persistent between
-                    user sessions if localstorage was cleared-->
-                    <div><p>Number of Sides on Dice</p></div> <!-- given that the original game board was much larger, perhaps a 4 sided dice would be better than a 6 sided for
-                    a smaller board, but larger number of sides ensures a faster game.-->             
+                <div>
+                    <h3>Ending the Game</h3>
+                    <p>The game ends when all players of a single team have crossed from their starting side of the
+                        board to the opposite side of the board.</p>
+                    <p>Whichever team gets all of its players across the board to the opposite planet first wins.</p>
+                    <p>There are several circumstances that can cause a team to forefit.</p>
                 </div>
+
+                <h2>DISCLAIMER</h2>
+                <p>
+                    BLACKOUT IS NOT A FAMILY GAME AND CONTAINS EXPLICIT CONTENT INAPPROPRIATE FOR PERSONS UNDER 18.<br>
+                    PLEASE DRINK RESPONSIBLY <br>
+                    IN THE UNITED STATES OF AMERICA, THE LEGAL DRINKING AGE IS 21 YEARS OLD.<br>
+                    THE CREATOR OF THE GAME IS NOT RESPONSIBLE FOR ANY DAMAGES, INJURY, OR OTHER ISSUES INCURRED AS A
+                    RESULT OF THE USE OF THIS GAME, WEBSITE,
+                    OR ANY OTHER ASSOCIATED MATERIALS.<br>
+                    THE OPINIONS EXPRESSED WITHIN ARE NOT THE OPINIONS OF THE CREATOR OF THIS GAME <br>
+                    PLEASE DRINK RESPONSIBLY
+                </p>
             </div>
-            <p><b>Version 1.1</b></p>
         </div>
-    </body>
+        <div id="settings">
+            <p>Settings</p>
+            <div class="modal" id="settingsmodal">
+                <div>
+                    <p>Explicit Content Filter</p> <!--checkbox-->
+                </div> 
+                <div>
+                    <p>Include Legacy Cards (59 Cards)</p> <!--checkbox-->
+                </div>
+                <div>
+                    <p>Include Expanded Cardset (85+ Cards)</p> <!--checkbox-->
+                </div>
+                <div>
+                    <p>Include Timed Cards</p> <!--checkbox-->
+                </div>
+                <div>
+                    <p>N-sided Dice</p>
+                    <p>N = 6</p> <!--maybe a slider would go well here, with a lower limit at like 3 up to like 8-->
+                </div>
+                <!-- given that the original game board was much larger, perhaps a 4 sided dice would be better than a 6 sided for
+                    a smaller board, but larger number of sides ensures a faster game.-->
+            </div>
+        </div>
+        <p><b>Version 1.1</b></p>
+    </div>
+</body>
+
 </html>
