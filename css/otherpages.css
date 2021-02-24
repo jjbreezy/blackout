@@ -1,10 +1,49 @@
-.content {
-    background-color: brown;
+html {
+    background-color: black;
+    font-family: monospace;
+    font-size: larger;
 }
-.footer {
-    background-color: aqua;
-    color: brown;
+#header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    margin-bottom: auto;
+    top: 0;
 }
-.header {
-    background-color: blue;
+.navbutton {
+    border: 2px solid white;
+    padding: 2%;
+    height: 50px;
+}
+.navbutton:hover {
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 0px 0px 1em 1em;
+    height: min-content;
+}
+#content {
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+    cursor:default;
+    align-content: center;
+    justify-content: center;
+    text-justify: auto;
+    
+}
+#footer {
+    background: rgb(0,0,0);
+    color: rgba(100, 100, 100, 1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
 }
