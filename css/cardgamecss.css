@@ -12,6 +12,7 @@ body {
     font-family: 'Space Mono', monospace;
 }
 body::after {
+    background-size: 100% 100%;
     background-image: url("/img/401912580_BLACK_LIQUID_400px.gif");
     content: "";
     opacity: 0.4;
@@ -128,6 +129,8 @@ body::after {
     background-image: none;
 }
 #settings {
+    display: none;
+    
     border: 2px solid white !important; 
     display: inline-flexbox;
     height: auto;
@@ -142,6 +145,8 @@ body::after {
     background: black;
 }
 #rules {
+    display: none;
+    
     border: 2px solid white !important;
     padding: 10px;
     height: auto;
