@@ -9,7 +9,6 @@ html {
     display: flex;
     align-content: center;
     justify-content: center;
-    position: fixed;
     margin-bottom: auto;
     top: 0;
 }
@@ -46,4 +45,20 @@ html {
     width: 100%;
     text-align: center;
     font-size: smaller;
+}
+
+.active {
+    background-image: url("/img/401912580_BLACK_LIQUID_400px.gif");
+    color: white;
+    font-weight: 900;
+    pointer-events: none; 
+}
+
+.logo {
+    background-image: url("/icons/android-chrome-192x192.png");
+    width: 64px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    background-size: 100%;
+    border: none;
 }

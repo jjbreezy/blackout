@@ -11,3 +11,4 @@ https://developers.google.com/fonts/docs/getting_started
 https://favicon.io/favicon-converter/
 https://www.w3schools.com/howto/howto_css_modals.asp
 https://cssgradient.io/
+https://cliply.co/clip/black-liquid-background/ ATTRIBUTION

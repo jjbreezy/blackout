@@ -33,6 +33,7 @@ body {
     justify-items: center;
     align-items: center;
     background-color: black;
+    background-image: url("/img/401912580_BLACK_LIQUID_400px.gif");
 }
 #card_container {
     height: auto;
@@ -46,6 +47,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
+    background: black;
 }
 #card_display {
     height: 5em;
@@ -89,7 +91,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
-    
+    background: black;
 }
 #dice_display {
     height: 10vh;
@@ -100,7 +102,6 @@ body {
     color: white;
     border-radius: 1em;
     font-size: 40px;
-    /* background-image: 'cardgame_favicons/android-chrome-512x512.png' !important; I can't get any background image divs to work :(*/
 }
 #roll_dice_button button {
     cursor: pointer;
@@ -128,6 +129,7 @@ div {
     margin: 1%;
     justify-self: right;
     font-size: 15px;
+    background: black;
 }
 #rules {
     display: inline-flexbox;
@@ -136,9 +138,11 @@ div {
     margin: 1%;
     justify-self: left;
     font-size: 15px;
+    background: black;
 }
 .modal {
     display: none;
+    background: black;
 }
 #rulesmodal {
     display: none;
