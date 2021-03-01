@@ -64,7 +64,7 @@ body::after {
     color: white;
     border-radius: 1em;
     font-size: 20px;
-    background-color: rgba(15, 15, 15, 1);
+    background-color: rgba(30, 30, 30, 1);
     /* font-size: 20px; any font size changes break the page :/ */
 }
 #card_button button {
@@ -111,7 +111,7 @@ body::after {
     color: white;
     border-radius: 1em;
     font-size: 40px;
-    background-color: rgba(15, 15, 15, 1);
+    background-color: rgba(30, 30, 30, 1);
 }
 #roll_dice_button button {
     cursor: pointer;
