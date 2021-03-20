@@ -26,6 +26,10 @@ html {
     border-radius: 0px 0px 1em 1em;
     height: min-content;
 }
+.navbutton a {
+    width: auto;
+    height: auto;
+}
 #content {
     font-size: x-large;
     padding-top: 100px;
