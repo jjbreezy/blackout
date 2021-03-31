@@ -128,7 +128,7 @@ body::after {
     align-content: center;
     background-image: none;
 }
-/* #settings {
+#settings {
     display: none;
     border: 2px solid white !important; 
     display: inline-flexbox;
@@ -142,7 +142,7 @@ body::after {
     justify-self: right;
     font-size: 15px;
     background: black;
-} */
+}
 #rules {
     display: none;
     border: 2px solid white !important;
@@ -183,4 +183,16 @@ body::after {
 .interactbutton:active {
     color: white;
     background-color: black;
+}
+
+#rulesButton {
+    font-size: large;
+    font-family: monospace;
+    color: white;
+    background-color: black;
+    padding: 2%;
+    border-radius: 50%;
+    margin: 0;
+    border: white 2px solid;
+    left: 0px !important;
 }
