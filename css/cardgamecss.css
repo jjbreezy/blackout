@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0%;
     padding: 0;
     width: 100vw;
@@ -139,37 +139,6 @@ body::after {
     align-content: center;
     background-image: none;
 }
-#settings {
-    display: none;
-    border: 2px solid white !important; 
-    display: inline-flexbox;
-    height: auto;
-    width: auto;
-    border-radius: 50%;
-    padding: 10px;
-    grid-row: 3;
-    grid-column: 1;
-    margin: 1%;
-    justify-self: right;
-    font-size: 15px;
-    background: black;
-}
-#rules {
-    display: none;
-    border: 2px solid white !important;
-    padding: 10px;
-    height: auto;
-    width: auto;
-    border-radius: 50%;
-    display: inline-flexbox;
-    grid-row: 3;
-    grid-column: 1;
-    margin: 1%;
-    justify-self: left;
-    justify-content: center;
-    font-size: 15px;
-    background: black;
-}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -225,23 +194,21 @@ body::after {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: black;
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+    background-color: rgba(30, 30, 30, 1)
+}
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: black;
     color: white;
 }
-#rulesmodal {
-    display: none;
-}
-#settingsmodal {
-    display: none;
-}
+
 /* new buttons */
 .interactbutton {
     font-family: monospace;
@@ -268,4 +235,15 @@ body::after {
     margin: 0;
     border: white 2px solid;
     left: 0px !important;
+}
+
+.rulescontent {
+    border: solid black 4px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.rulescontent h3 {
+    background-color: black;
 }
