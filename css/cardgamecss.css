@@ -128,9 +128,8 @@ body::after {
     align-content: center;
     background-image: none;
 }
-#settings {
+/* #settings {
     display: none;
-    
     border: 2px solid white !important; 
     display: inline-flexbox;
     height: auto;
@@ -143,10 +142,9 @@ body::after {
     justify-self: right;
     font-size: 15px;
     background: black;
-}
+} */
 #rules {
     display: none;
-    
     border: 2px solid white !important;
     padding: 10px;
     height: auto;
@@ -170,4 +168,19 @@ body::after {
 }
 #settingsmodal {
     display: none;
+}
+/* new buttons */
+.interactbutton {
+    font-family: monospace;
+    color: black;
+    background-color: white;
+    height: auto;
+    width: auto;
+    padding: 2%;
+    font-size: xx-large;
+    border-radius: 1em;
+}
+.interactbutton:active {
+    color: white;
+    background-color: black;
 }
