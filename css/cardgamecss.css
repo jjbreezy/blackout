@@ -247,3 +247,7 @@ body::after {
 .rulescontent h3 {
     background-color: black;
 }
+.rulescontent img {
+    display: block;
+    margin: auto;
+}
