@@ -164,7 +164,7 @@ body::after {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -226,7 +226,7 @@ body::after {
 }
 
 #rulesButton {
-    font-size: large;
+    font-size: xx-large;
     font-family: monospace;
     color: white;
     background-color: black;
@@ -250,4 +250,12 @@ body::after {
 .rulescontent img {
     display: block;
     margin: auto;
+    max-width: 200px;
+}
+.exampletext{
+    color: #562475;
+    font-weight: bolder;
+}
+#dice {
+    max-width: 100px;
 }

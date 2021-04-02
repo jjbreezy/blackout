@@ -67,7 +67,7 @@
             RDB.addEventListener('click', diceTalk);
             function diceTalk() {
                 var result = 0;
-                var result = Math.floor(Math.random() *6) + 1;
+                var result = Math.floor(Math.random() *4) + 1;
                 document.getElementById('dice_display').textContent = result;
                 console.log('number returned = ' + result);
             }
