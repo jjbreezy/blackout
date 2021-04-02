@@ -14,3 +14,7 @@ https://cssgradient.io/
 https://css-tricks.com/snippets/css/transparent-background-images/
 
 https://cliply.co/clip/black-liquid-background/ ATTRIBUTION
+
+https://jsfiddle.net/gionaf/Ugc5g/
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
