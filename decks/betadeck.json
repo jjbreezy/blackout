@@ -1144,22 +1144,6 @@
     "explicit": ""
   },
   {
-    "cardcontents": "Make a rule for every time the dice rolls 5",
-    "title": "",
-    "rating": "G",
-    "expansion": "Expansion 3",
-    "type": "Rule",
-    "explicit": ""
-  },
-  {
-    "cardcontents": "Make a rule for every time the dice rolls 6",
-    "title": "",
-    "rating": "G",
-    "expansion": "Expansion 3",
-    "type": "Rule",
-    "explicit": ""
-  },
-  {
     "cardcontents": "Roll the dice again, assign that number of sips to any number of opposing players",
     "title": "",
     "rating": "G",
