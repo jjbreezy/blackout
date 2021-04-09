@@ -24,7 +24,7 @@
                 .then(response => response.json())
                 .then(data => {
                     jsontestdeck = data;
-                    console.log(jsontestdeck);
+                    // console.log(jsontestdeck);
                 });
 
             /*button click for new card*/

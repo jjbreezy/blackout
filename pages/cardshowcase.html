@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 
 <head>
-    <link rel="stylesheet" href="/css/otherpages.css">
-    <title>Rules</title>
+    <style>
+        @import url('/css/otherpages.css');
+        @import url('/css/cardshowcase.css');
+    </style>
 
     <!-- block interaction w page by google crawlers-->
     <meta name="googlebot" content="noindex" />
@@ -28,30 +30,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <title>Blackout Card Showcase</title>
+    <script type = "text/javascript" src="/js/cardshowcase.js"></script>
+    <script type = "text/javascript" src="/decks/betadeck.json"></script>
+    
+    <title>Blackout: Card Showcase</title>
 </head>
 
 <body>
     <div id="header">
         <div class="navbutton logo"></div>
         <div class="navbutton" tabindex="0"><p>Game</p></div>
-        <div class="navbutton" tabindex="1"><p>Card Showcase</p></div>
+        <div class="navbutton active" tabindex="1"><p>Card Showcase</p></div>
         <!-- <div class="navbutton"><p>Shop</p></div> -->
-        <div class="navbutton active" tabindex="2"><p>About</p></div>
+        <div class="navbutton" tabindex="2"><p>About</p></div>
         <!-- <div class="navbutton"><p>Press Kit</p></div>
         <div class="navbutton"><p>Sponsorships</p></div> -->
         <div class="navbutton" tabindex="3"><p>Contact</p></div>
     </div>
     <div id="content">
-        <h1>Card Showcase</h1>
-        <div id="type breakdown">
-            <div class="cardshowcase">
-                <h1></h1>
-                <p></p>
+        <!-- parallax cards with descriptions, can scroll right and left on a card to see others in its category-->
+        <div id="card-grid">
+            <div class="card">
+                <h1>Card Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat quas sint necessitatibus delectus accusamus ad doloribus iure molestias non, doloremque temporibus natus nihil perspiciatis nisi, omnis veniam, atque deserunt.</p>
+                <h3>Expansion</h3>
             </div>
-        </div> <!-- parallax cards with descriptions, can scroll right and left on a card to see others in its category-->
-        <div id="grid">
-
+            <div class="card">
+                <h1>Card Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat quas sint necessitatibus delectus accusamus ad doloribus iure molestias non, doloremque temporibus natus nihil perspiciatis nisi, omnis veniam, atque deserunt.</p>
+                <h3>Expansion</h3>
+            </div>
+            <div class="card">
+                <h1>Card Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat quas sint necessitatibus delectus accusamus ad doloribus iure molestias non, doloremque temporibus natus nihil perspiciatis nisi, omnis veniam, atque deserunt.</p>
+                <h3>Expansion</h3>
+            </div>
+            <div class="card">
+                <h1>Card Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat quas sint necessitatibus delectus accusamus ad doloribus iure molestias non, doloremque temporibus natus nihil perspiciatis nisi, omnis veniam, atque deserunt.</p>
+                <h3>Expansion</h3>
+            </div>
+            <div class="card">
+                <h1>Card Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat quas sint necessitatibus delectus accusamus ad doloribus iure molestias non, doloremque temporibus natus nihil perspiciatis nisi, omnis veniam, atque deserunt.</p>
+                <h3>Expansion</h3>
+            </div>
+            <div class="card">
+                <h1>Card Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat quas sint necessitatibus delectus accusamus ad doloribus iure molestias non, doloremque temporibus natus nihil perspiciatis nisi, omnis veniam, atque deserunt.</p>
+                <h3>Expansion</h3>
+            </div>
         </div> <!-- a grid showing all cards, or as many as it makes sense to size wise. good way to visualize cards and how rare they are, can also be sorted-->
     </div>
     <div id="footer">
