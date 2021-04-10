@@ -25,7 +25,7 @@
     /* box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; */
     height: 100%;
     width: 100%;
-    transition: all 500ms;
+    transition: all 250ms;
     overflow: hidden;
     
     background-size:contain;
