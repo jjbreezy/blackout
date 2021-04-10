@@ -18,7 +18,7 @@ console.log(currentdeck);
 //articles on async and fulfilling and I don't fucking get it at all. This is a ridiculous system. 
 // the promise state even says fulfilled in the console... what else can I do...
 
-function populateShowcase();
+function populateShowcase() {
     //this for loop here is intended to put the contents of individual objects inside the currentdeck array 
     //into the cards that will be created by a PHP function.
     for (card in currentdeck) {
@@ -29,4 +29,5 @@ function populateShowcase();
 
         var title = Document.getElementbyId('madeup-php-div-id');
         contents.innerText = card.title;
+    }
     }
