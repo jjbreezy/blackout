@@ -121,12 +121,11 @@ body::after {
     height: 10vh;
     width: 80%;
     margin: 2%;
-    background-color: black;
+    background: black;
     font-weight: bolder;
     color: white;
     border-radius: 1em;
     font-size: 40px;
-    background-color: rgba(30, 30, 30, 1);
 }
 #roll_dice_button button {
     cursor: pointer;
