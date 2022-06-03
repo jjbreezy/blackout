@@ -20,7 +20,7 @@
             
             var jsontestdeck = [];
             //JSON test deck fetch
-            fetch("/decks/betadeck.json")
+            fetch("../cleandeck.json")
                 .then(response => response.json())
                 .then(data => {
                     jsontestdeck = data;
